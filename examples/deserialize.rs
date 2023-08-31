@@ -39,7 +39,7 @@ fn main() {
                 Box::new(|name| serde_json_deserialize::<GithubEvent>(name)),
             ),
             (
-                "short_json",
+                "small_json",
                 Box::new(|name| smid_json_to_struct::<Person>(name)),
                 Box::new(|name| serde_json_deserialize::<Person>(name)),
             ),
@@ -65,7 +65,7 @@ fn main() {
                 Box::new(|name| serde_json_deserialize::<serde_json::Value>(name)),
             ),
             (
-                "short_json",
+                "small_json",
                 Box::new(|name| smid_json_to_value(name)),
                 Box::new(|name| serde_json_deserialize::<serde_json::Value>(name)),
             ),

@@ -30,7 +30,7 @@ fn main() {
             Box::new(|| serde_json_serialize::<GithubEvent>()),
         ),
         (
-            "short_json",
+            "small_json",
             Box::new(|| smid_json_serialize::<Person>()),
             Box::new(|| serde_json_serialize::<Person>()),
         ),
